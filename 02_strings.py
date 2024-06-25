@@ -34,3 +34,29 @@ print(str6)
 age = 45
 # txt = "Rahul's age is " + age #we can't combine number and string like this
 txt1 = f"Rahul's age is {age}" #F-Strings in python
+
+# Placeholder and modifiers
+
+price = 99.9
+txt2 = f"The price of earphones is {price:.2f}"
+print(txt2)
+
+txt3 = f"The price is {20*40} dollars."
+print(txt3)
+
+# Escape characters
+esc1 = "This is a \"double quote\" and this is \'single quote\'"
+esc2 = "\\ backslash \n \t tab \n \b backspace \n "
+print(esc2)
+
+#String methods
+
+string1 = "welcome to this codebase."
+string2 = "banana"
+
+print(len(string1))
+print(string1.capitalize()) #first character upper case
+print(string1.center(27,'+'))
+
+# visit this link for more string methods or you can also go to official documentation:
+#https://www.w3schools.com/python/python_strings_methods.asp
