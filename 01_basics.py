@@ -124,5 +124,5 @@ print(str6)
 #String format
 age = 45
 # txt = "Rahul's age is " + age #we can't combine number and string like this
-txt1 = f"Rahul's age is {age}" #F-Strings in pythn
+txt1 = f"Rahul's age is {age}" #F-Strings in python
 print(txt1)
