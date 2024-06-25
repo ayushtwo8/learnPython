@@ -89,3 +89,22 @@ print(type(value15))
 
 import random
 print(random.randrange(1,10))
+
+#isinstance(): Return whether an object is an instance of a class or of a subclass thereof.
+
+num = 100
+print(isinstance(num,int))
+
+# Operators
+num1 = 5
+num2 = 2
+
+print(num1 + num2)
+print(num1 - num2)
+print(num1 * num2)
+print(num1 / num2)
+print(num1 % num2)
+print(num1 ** num2)
+print(num1 // num2)
+
+print(num1 < 10 and num2 > 100)
