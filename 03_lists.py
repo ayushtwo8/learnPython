@@ -13,7 +13,6 @@ print(len(list4))
 thislist = list(("apple","banana","mango"))
 print(thislist)
 
-
 print(thislist[2])
 print(thislist[0:2])
 
