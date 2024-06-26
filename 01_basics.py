@@ -13,8 +13,8 @@ c = float(3)
 
 
 # Unpack a list
-fruits = ["apple","banana","orange"]
-p,q,r = fruits
+fruits = ["apple","banana","orange","mango"]
+p,q,*r = fruits # *r is list contains all the left items
 print(p)
 print(q)
 print(r)
@@ -58,7 +58,7 @@ value3 = 30.5
 value4 = 1j
 value5 = ["apple","banana","mango"]
 value6 = ("ram","sita","hanuman")
-value7 = range(6)
+value7 = range(0,6)
 value8 = {"name":"rohan","age":25}
 value9 = {"carrot","cabbage","brinjal"}
 value10 = frozenset({"apple","banana","cherry"})
@@ -67,6 +67,8 @@ value12 = b"Hello"
 value13 = bytearray(5)
 value14 = memoryview(bytes(5))
 value15 = None
+value16 = list(range(6))
+
 
 print(type(value1))
 print(type(value2))
@@ -83,7 +85,7 @@ print(type(value12))
 print(type(value13))
 print(type(value14))
 print(type(value15))
-
+print(value16)
 
 # Random Number - random module is used to generate a random number in python
 
