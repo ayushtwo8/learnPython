@@ -1,4 +1,4 @@
-#List : indexed, ordered, changeable and allow duplicate values.
+#List: indexed, ordered, changeable(mutable) and allow duplicate values.
 
 
 list1 = ["hello","welcome","bye","hello"]
