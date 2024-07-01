@@ -134,3 +134,45 @@ fArr = np.array([[1,2,3],[4,5,6]])
 newfArr = arr.reshape(-1)
 
 print(newfArr)
+
+
+# Iterating arrays using nditer()
+
+# Iterating through the following 3D array:
+iArr = np.array([[[1,2],[3,4],[5,6],[7,8]]])
+for x in np.nditer(iArr):
+    print(x)
+
+
+# Iterating array with different datatypes:
+
+# Iterate through the array as a string. 
+nums = np.array([1,2,3])
+for x in np.nditer(nums, flags=['buffered'],op_dtypes=['S']):
+    print(x)
+
+
+# Enumerated iteration using ndenumerate()
+
+eArr = np.array([1,2,4])
+for index, x in np.ndenumerate(eArr):
+    print(index, x)
+
+
+
+# Joining NumPy arrays 
+
+# join two 1D arrays:
+
+arrA = np.array([1,2,3])
+arrB = np.array([4,5,6])
+arrC = np.concatenate((arrA,arrB))
+print(arrC)
+
+
+# join two 2D arrays along rows(Axis = 1):
+
+arrayA = np.array([[1,2],[3,4]])
+arrayB = np.array([[5,6],[7,8]])
+arrayC = np.concatenate((arrayA,arrayB), axis=1)
+print(arrayC)
