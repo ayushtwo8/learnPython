@@ -176,3 +176,60 @@ arrayA = np.array([[1,2],[3,4]])
 arrayB = np.array([[5,6],[7,8]])
 arrayC = np.concatenate((arrayA,arrayB), axis=1)
 print(arrayC)
+
+
+# joining arrays using stack functions
+
+firstArr = np.array([1,2,3])
+secondArray = np.array([4,5,6])
+finalArray = np.stack((firstArr, secondArray), axis = 0)
+print(finalArray)
+
+
+# searching arrays
+
+ar = np.array([1,2,3,4,5,6,5])
+x = np.where(ar == 5)
+print(x)
+
+
+# searchsorted() : performs a binary search in the array and
+# returns the index where the specified value would be inserted
+# to maintain the search order.
+
+arrABC = np.array([4,5,6,7,8])
+y = np.searchsorted(arrABC,7)
+z = np.searchsorted(arrABC,7, side='right') #searchsorted() from right
+print(y)
+print(z)
+
+
+
+# sorting arrays 
+
+toSortArray = np.array([5,3,6,8,1])
+print(np.sort(toSortArray))
+
+
+
+# filtering arrays
+toFilterArray = np.array([41,64,43,59])
+result = [True,False,True,False]
+filteredArray = toFilterArray[result]
+print(filteredArray)
+
+
+# Create a filter array that will retuen onlu values higher than 42.
+
+toBeFiltered = np.array([41,42,43,44])
+filter_arr = [] #created an empty array
+for element in toBeFiltered:
+    if element > 42:
+        filter_arr.append(True)
+    else:
+        filter_arr.append(False)    
+        
+filtered_array = toBeFiltered[filter_arr]
+
+print(filter_arr)
+print(filtered_array)       
